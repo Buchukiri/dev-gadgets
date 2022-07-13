@@ -22,6 +22,8 @@
             <a class="cart" href="#">
                 <img class="cart-img" src="img/cart.png" alt="panier">
                 <span class="cart-nb">0</span>
+                <ul class="cart-list" class="cart-list">
+                </ul>
             </a>
         </div>
     </header>
@@ -30,23 +32,24 @@
         <section class="page-pics">
             <div class="pictures">
                 <button id="pictures-prev" type="button" class="pictures-handler pictures-prev">◀️</button>
-                <img class="pictures-img" src="img/canard-jaune-1-l.png" alt="canard jaune pour dévloppeur">
+                <img id="main-art-img" class="pictures-img" src="img/canard-jaune-1-l.png"
+                    alt="canard jaune pour dévloppeur">
                 <button id="pictures-next" type="button" class="pictures-handler pictures-next">▶️</button>
                 <ul id="thumbs" class="thumbs">
                     <li class="thumbs-itm">
-                        <img data-id="1" class="thumbs-img" src="img/canard-jaune-1-s.png" alt="photo canard 1">
+                        <img class="thumbs-img" src="img/canard-jaune-1-s.png" alt="photo canard 1">
                     </li>
                     <li class="thumbs-itm">
-                        <img data-id="2" class="thumbs-img" src="img/canard-jaune-2-s.png" alt="photo canard 2">
+                        <img class="thumbs-img" src="img/canard-jaune-2-s.png" alt="photo canard 2">
                     </li>
                     <li class="thumbs-itm">
-                        <img data-id="3" class="thumbs-img" src="img/canard-jaune-3-s.png" alt="photo canard 3">
+                        <img class="thumbs-img" src="img/canard-jaune-3-s.png" alt="photo canard 3">
                     </li>
                     <li class="thumbs-itm">
-                        <img data-id="4" class="thumbs-img" src="img/canard-jaune-4-s.png" alt="photo canard 4">
+                        <img class="thumbs-img" src="img/canard-jaune-4-s.png" alt="photo canard 4">
                     </li>
                     <li class="thumbs-itm">
-                        <img data-id="5" class="thumbs-img" src="img/canard-jaune-5-s.png" alt="photo canard 5">
+                        <img class="thumbs-img" src="img/canard-jaune-5-s.png" alt="photo canard 5">
                     </li>
                 </ul>
             </div>
@@ -54,8 +57,8 @@
                 11€95
             </div>
             <div class="add">
-                <input class="add-qty" type="text" value="1">
-                <button class="add-cta" type="button">Ajouter au panier</button>
+                <input id="add-qty" class="add-qty" type="text" value="1">
+                <button id="add-cta" class="add-cta" type="button">Ajouter au panier</button>
             </div>
         </section>
         <section class="page-txt page-section">
