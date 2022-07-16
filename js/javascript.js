@@ -109,17 +109,19 @@ const cartList = "";
 
 // click
 const inputValue = document.getElementById("add-qty")
+console.log(inputValue);
 const addBtn = document.getElementById("add-cta");
 
 // function add to cart
 function addCart() {
     const spanNbmbr = document.querySelector(".cart-nb");
+    console.log(spanNbmbr);
         addBtn.addEventListener("click", function (event) {
             spanNbmbr.innerHTML = inputValue.value;
             addBtn.removeEventListener("click",addCart)
             addBtn.innerHTML = "Déjà au panier"
             addBtn.classList.add("add-cta-off")
-            
+           
             
 
 
