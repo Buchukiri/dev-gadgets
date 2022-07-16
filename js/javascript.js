@@ -69,48 +69,17 @@ nextbtn.addEventListener("click",function (event) {
 
 
                     //VERSION PC
-// mouseover
-
-
-
-// const thumbImg = document.querySelectorAll(".thumbs-img");
-//     thumbImg.forEach(img => {
-//         imgaddEventListener("mouseover", function (event) {
-//         console.log(this);
-//     });
-    
-//     })
-
-
-
 
 function mouseOver() {
     const ulThumbs = document.getElementById("thumbs");
-    // console.log(ulThumbs);
-    const thumbs = document.querySelectorAll(".thumbs-itm");
-    // console.log(thumbs);
+    const thumbs = document.querySelectorAll(".thumbs-itm .thumbs-img");
     const thumbImg = document.querySelectorAll(".thumbs-img")
-    // console.log(thumbImg);
 
-
-
-    thumbImg.forEach(li => {
-        console.log(li);
-           
+    thumbs.forEach(li => {
+        li.addEventListener("mouseover",function (e){
+        imgXl.src = this.src;
+        })     
     });
-    
-    // for (const img in li) {
-    //     li.addEventListener("mouseover",function (e){
-          
-    //     })
-    // }
-  
-    // for (const img in thumbs) {
-    //     img.addEventListener("mouseover",function (e) {
-    //         imgXl.src = this
-    //     })
-    // }
-
 }
 mouseOver()
 
